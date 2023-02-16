@@ -53,26 +53,3 @@ class pilote:
     def salaireannuel(self):
         return self.__salaire*12
 
-p1=pilote()
-av1=avion(1,"AIR12",100,20)
-av2=avion(2,"BOE",100,40)
-p1.set__prenom(input("entre le prenom de pilote"))
-p1.set__nom(input("entre le nom de pilote"))
-p1.set__salaire(int(input("entre le salaire du pilote")))
-#avion1:
-av1.set__numero(int(input("entre le numero d'avion N1")))
-av1.set__nom(input("entre le nom d'avion N1"))
-av1.set__capacite(int(input("entre la capacite d'avion N1")))
-av1.set__cout_par_place(float(input("entre le cout d'une place sur cette avion N1")))
-#avion2
-av2.set__numero(input("entre le numero d'avion N2"))
-av2.set__nom(input("entre le nom d'avion N2"))
-av2.set__capacite(input("entre la capacite d'avion N2"))
-av2.set__cout_par_place(input("entre le cout d'une place sur cette avion N2"))
-#________________
-av1.aff_pilote(p1)
-av1.augmentation_salaire()
-print(av1.affichage())
-av2.aff_pilote(p1)
-av2.augmentation_salaire()
-print(av2.affichage())
